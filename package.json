@@ -1,0 +1,34 @@
+{
+  "name": "middleware-pipe-flow",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medanat/middleware-pipe-flow.git"
+  },
+  "author": "Yazan Medanat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/medanat/middleware-pipe-flow/issues"
+  },
+  "homepage": "https://github.com/medanat/middleware-pipe-flow",
+  "engines": {
+    "node": "0.10.21"
+  },
+  "main": "index.js",
+  "scripts": {
+    "coverage": "istanbul cover _mocha --reporter spec --bail --check-leaks ./spec",
+    "test": "mocha --reporter spec --bail --check-leaks ./spec",
+    "bundle": "browserify index.js > middleware-pipe-flow.js"
+  },
+  "devDependencies": {
+    "bluebird": "^2.9.12",
+    "chai": "^1.10.0",
+    "istanbul": "^0.3.5",
+    "karma": "^0.12.31",
+    "karma-browserify": "^3.0.1",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "^0.1.10",
+    "karma-mocha-reporter": "^0.3.2"
+  }
+}
